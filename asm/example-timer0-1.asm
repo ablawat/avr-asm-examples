@@ -23,7 +23,7 @@ Loop:           ldi     r16, 0
                 
                 ldi     r24, 0xD0
                 ldi     r25, 0x07
-                call    BaDelay1M11
+                call    Delay11D1M
                 
                 ldi     r16, 64
                 com     r16
@@ -31,7 +31,7 @@ Loop:           ldi     r16, 0
                 
                 ldi     r24, 0xD0
                 ldi     r25, 0x07
-                call    BaDelay1M11
+                call    Delay11D1M
                 
                 ldi     r16, 128
                 com     r16
@@ -39,7 +39,7 @@ Loop:           ldi     r16, 0
                 
                 ldi     r24, 0xD0
                 ldi     r25, 0x07
-                call    BaDelay1M11
+                call    Delay11D1M
                 
                 ldi     r16, 192
                 com     r16
@@ -47,7 +47,7 @@ Loop:           ldi     r16, 0
                 
                 ldi     r24, 0xD0
                 ldi     r25, 0x07
-                call    BaDelay1M11
+                call    Delay11D1M
                 
                 jmp    Loop
                 

@@ -14,7 +14,7 @@
                 
 start:          ldi     r24, 0xE8
                 ldi     r25, 0x03
-                call    BaDelay1M10
+                call    Delay10D1M
                 
                 ldi     r16, 0xFF
                 in      r17, PORTD
