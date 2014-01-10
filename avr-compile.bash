@@ -14,6 +14,12 @@ then
 	
 	echo
 	
+	if [ ! -d hex ]
+	then
+		mkdir hex
+		echo "mkdir hex"
+	fi
+	
 	for I in $FILES
 	do
 		mv $I hex
