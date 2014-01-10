@@ -1,0 +1,27 @@
+Specyfikacja funkcji - opóźnienie o określoną liczbę milisekund
+
+Nazwa           : Delay10D1M (Delay Version 1.0 Device 1.0 MHz)
+Wersja          : 1.0
+Rozmiar         : 7 instrukcji (14 bajtów)
+
+Argumenty       : r25, r24
+Użycie          : r16
+Zwaraca         : -
+
+
+Przykładowe użycie:
+
+        ldi     r24, 0xE8
+        ldi     r25, 0x03
+        call    Delay10D1M
+
+
+Opis:
+
+        r25 r24 - liczba milisekund
+
+Funkcja z rejestrów r25 i r24 pobiera 16-bitową całkowitą liczbę dodatnią. Natępnie zapętla swoje działanie wykonując opóźnienie o taką ilość milisekund jaką podano w argumencie dla taktowania procesora częstotliwością 1 MHz. Funkcja nie zwraca żadnej wartości.
+
+Po zakończeniu funkcji rejestry arumentu są wyzerowane, rejestr r16 jest wyzerowany (brak ochrony rejestrów pomocniczych!).
+
+Zakres możliwych wartości opóźnienia wynosi od 1 do 65535 ms.
